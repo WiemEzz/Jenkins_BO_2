@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Stage1') {
       steps {
-        sh '''git clone https://github.com/abesrour1111/git_devops.git /var/lib/jenkinsdepotjenk
+        sh '''git clone https://github.com/abesrour1111/git_devops.git /var/lib/jenkins/depotjenk
 '''
       }
     }
@@ -16,7 +16,7 @@ grep -A1 modification gestion_groupes && grep -A1 modification gestion_utilisate
 
 else
 
-echo "message d\'erreur, clone échoué"
+echo "message d\'erreur, clone Ã©chouÃ©"
 fi
 '''
       }
